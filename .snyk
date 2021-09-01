@@ -1,0 +1,16 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.21.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:lodash:20180130':
+    - stripe-webhook-middleware > stripe > lodash:
+        patched: '2021-09-01T19:56:28.887Z'
+  'npm:mime:20170907':
+    - nodemailer-mailgunapi-transport > superagent > mime:
+        patched: '2021-09-01T19:56:28.887Z'
+    - nodemailer-mailgunapi-transport > superagent > form-data > mime:
+        patched: '2021-09-01T19:56:28.887Z'
+  'npm:qs:20140806-1':
+    - nodemailer-mailgunapi-transport > superagent > qs:
+        patched: '2021-09-01T19:56:28.887Z'
